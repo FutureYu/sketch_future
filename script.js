@@ -213,6 +213,7 @@ const sketch = function(p) {
     function initModel(index) {
       modelLoaded = false;
       document.getElementById('sketch').classList.add('loading');
+      document.getElementById('msg').textContent = "正在加载模型...";
       
       if (model) {
         model.dispose();
@@ -222,8 +223,9 @@ const sketch = function(p) {
       model.initialize().then(() => {
         modelLoaded = true;
         document.getElementById('sketch').classList.remove('loading');
-        console.log(`🤖${availableModels[index]} loaded.`);
+        console.log(`ðŸ¤–${availableModels[index]} loaded.`);
         model.setPixelFactor(5.0);  // Bigger -> large outputs
+        document.getElementById('msg').textContent = "";
       });
     };
   

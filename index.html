@@ -8,19 +8,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
-    <title>Magic Sketchpad</title>
+    <title>神奇画板</title>
   </head>
   <body>
     <div id="splash">
       <div class="content">
-        <h1>magic sketchpad</h1>
+        <h1>神奇画板</h1>
         <p>
-          Draw things with machines! Every time you start drawing a doodle, a machine learning algorithm
-          tries to finish it and match the category you've selected. Try drawing multiple categories on the same page!
+          与 AI 共画！当你开始作画时，AI 将尝试为你补全。你可以在一页内多画几个，尽情尝试吧！
         </p>
           
         <button class="box big" id="btnGo">
-          Let's go!
+          开始
         </button>
         <p class="built-with">
         Built by <a target="_blank" href="https://twitter.com/notwaldorf">@notwaldorf</a> with <a target="_blank" href="https://magenta.tensorflow.org">magenta.js</a>. 
@@ -82,6 +81,7 @@
           </div>
         </div>
       </header>
+      <p id=msg>正在加载模型...</p>
       
       <div id="sketch" class="loading"></div>
   </body>
