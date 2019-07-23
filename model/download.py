@@ -1,6 +1,6 @@
 import requests
 
-base_url = "https://storage.googleapis.com/quickdraw-models/sketchRNN/models/"
+base_url = "https://raw.githubusercontent.com/FutureYu/sketch_future/master/model/"
 headers = {
     "DNT": "1",
     "Sec-Fetch-Mode": "cors",
